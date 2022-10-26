@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/chapters/01/learning.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    math_teacher "ХАХАХАХАХ. НЕТ."
-    ^
-
-File "game/chapters/01/learning.rpy", line 30: expected statement.
-    else:
-        ^
+File "game/chapters/01/introduction.rpy", line 24: expected statement.
+    bg 1st_september
+                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Oct 26 17:23:44 2022
+Wed Oct 26 19:27:32 2022
