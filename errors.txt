@@ -1,0 +1,14 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/chapters/01/learning.rpy", line 29: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    math_teacher "ХАХАХАХАХ. НЕТ."
+    ^
+
+File "game/chapters/01/learning.rpy", line 30: expected statement.
+    else:
+        ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Wed Oct 26 17:23:44 2022
