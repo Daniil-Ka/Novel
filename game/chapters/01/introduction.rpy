@@ -15,11 +15,12 @@ label introdaction:
 
 label .admission_to_URFU:
     "После нескольких бесонных ночей в ожидании результатов..."
-    "Получив высокий балл, вы задумались, на какое же направление поступать"
+    
     call .summer_slideshow
     scene bg admission_to_URFU
 
     menu:
+        "Получив высокий балл, вы задумались, на какое же направление поступать"
         "Конечно же ИРИТ-РТФ!":
             # todo
             show bg 1st_september
