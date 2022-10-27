@@ -17,7 +17,7 @@ label introdaction:
             # scene картинка с ноутом ночью
             "После нескольких бесонных ночей в ожидании результатов..."
             call mobilization_ending
-    return   
+    return
 
 label .admission_to_URFU:
     
