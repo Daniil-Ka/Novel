@@ -1,4 +1,4 @@
-Thu Oct 27 14:35:44 2022
+Thu Oct 27 22:50:33 2022
 Windows-10-10.0.22543
 Ren'Py 8.0.3.22090809
  
@@ -7,7 +7,7 @@ Bootstrap to the start of init.init took 0.05s
 Early init took 0.00s
 Loader init took 0.05s
 Loading error handling took 0.03s
-Loading script took 0.15s
+Loading script took 0.18s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -19,11 +19,11 @@ Backing up script files to 'C:\\Users\\kiril\\AppData\\Roaming/RenPy/backups\\No
 Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.02s
+Initial gc. took 0.01s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.30s
+Creating interface object took 0.31s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
@@ -32,7 +32,7 @@ Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.11s
@@ -47,10 +47,3 @@ Version: b'4.6.0 NVIDIA 472.12'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2058, 1158) drawable=(2058, 1158)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
