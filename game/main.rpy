@@ -7,3 +7,4 @@ define noname = Character('???', color='#fff7c8')
 label start:
     call introdaction
     return
+# todo
