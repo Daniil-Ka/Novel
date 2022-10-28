@@ -3,5 +3,6 @@
 traceback.txt
 errors.txt
 files.txt
+log.txt
 game/cache
-game/save
+game/saves
