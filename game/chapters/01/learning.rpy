@@ -219,7 +219,7 @@ label .math_test:
     #Вмешался, кр перенесли
     $ condition = True
     if condition: 
-        call .matrix_win
+        call matrix_win
     #Не вмешался, достал ответы
     elif is_have_answers:
         pass
