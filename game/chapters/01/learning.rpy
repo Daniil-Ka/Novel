@@ -121,7 +121,7 @@ label .interfere_in_conversation:
                     "Я почувствовал странное ощущение. Будто бы незримая рука вытягивала меня отсюда"
                     scene black with diss
                     "Я погрузился во мрак и снова потерял сознание"
-                    condition = True
+                    $ condition = True
     scene bg urfu rtf holl with diss                
     "Наконец, я очнулся. Странный был сон, но вроде бы теперь все в порядке"
     "Я посмотрел на учительницу лежащую рядом"
@@ -150,7 +150,7 @@ label .interfere_in_conversation:
     return
 
 label .not_interfere_in_conversation:
-    $is_have_answers = False
+    $ is_have_answers = False
     show bg teacher_home_cabinet with diss
     "Простояв на месте несколько минут, вы решаете заглянуть в другую комнату."
     "Посреди комнаты стоит стол, на котором лежат бумаги."
@@ -217,10 +217,12 @@ label .math_test:
     scene bg math_class with diss
     "\"Долгожданный\" день настал. Сегодня придется писать контрольную, а я так и не смог к ней подготовиться"
     #Вмешался, кр перенесли
+    $ condition = True
     if condition: 
         call .matrix_win
     #Не вмешался, достал ответы
-    else if is_have_answers:
+    elif is_have_answers:
+        pass
         #TODO
         #Прописать то, что гг не вмешался в сон и попытался достать ответы на контрольную (+пару выборов во всне)
         
