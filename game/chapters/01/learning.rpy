@@ -121,7 +121,7 @@ label .interfere_in_conversation:
                     "Я почувствовал странное ощущение. Будто бы незримая рука вытягивала меня отсюда"
                     scene black with diss
                     "Я погрузился во мрак и снова потерял сознание"
-                    condition = True
+                    $condition = True
     scene bg urfu rtf holl with diss                
     "Наконец, я очнулся. Странный был сон, но вроде бы теперь все в порядке"
     "Я посмотрел на учительницу лежащую рядом"
@@ -220,7 +220,8 @@ label .math_test:
     if condition: 
         call .matrix_win
     #Не вмешался, достал ответы
-    else if is_have_answers:
+    elif is_have_answers:
+        pass
         #TODO
         #Прописать то, что гг не вмешался в сон и попытался достать ответы на контрольную (+пару выборов во всне)
         
