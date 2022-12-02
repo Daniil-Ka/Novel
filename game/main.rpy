@@ -9,6 +9,7 @@ define diss = Dissolve(1.0)
 define ch_diss = Dissolve(0.5)
 
 #Черный фон
+# льл
 image black = "#000000ff"
 
 label start:
