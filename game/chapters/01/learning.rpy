@@ -9,7 +9,7 @@ label learning_start:
     call .math_lesson
     call .dream
     call .after_dream
-    call .math_test
+    call math_test
     return
 
 label .choice_subjects:
@@ -201,7 +201,7 @@ label object_transfer_in_dream:
     "Несколько дней спустя..."
     return
 
-label .math_test:
+label math_test:
     scene bg math_class with diss
     "\"Долгожданный\" день настал. Сегодня придется писать контрольную, а я так и не смог к ней подготовиться"
     #Вмешался, кр перенесли
