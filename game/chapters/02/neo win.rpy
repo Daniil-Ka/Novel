@@ -1,2 +1,2 @@
 label neo_win:
-    pass
+    return
