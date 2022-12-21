@@ -47,4 +47,4 @@ image black = "#000000ff"
 
 label start:
     call introdaction
-    return
+    return 
