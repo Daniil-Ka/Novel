@@ -285,21 +285,28 @@ style quick_button_text:
 ## Этот экран включает в себя главное и игровое меню, и обеспечивает навигацию к
 ## другим меню и к началу игры.
 
-screen navigation():
+# xalign - выравнивать ли по центру
+screen navigation(xalign=False):
 
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
         yalign 0.5
+
+        if xalign:
+            xalign 0.5
+        else:
+            xpos 60
 
         spacing gui.navigation_spacing
 
         if main_menu:
+            #
 
             textbutton _("Начать") action Start()
 
         else:
+            xpos 60
 
             textbutton _("История") action ShowMenu("history")
 
@@ -339,6 +346,8 @@ style navigation_button:
     properties gui.button_properties("navigation_button")
 
 style navigation_button_text:
+    size 50
+    xalign 0.5
     properties gui.button_text_properties("navigation_button")
 
 
@@ -362,7 +371,8 @@ screen main_menu():
 
     ## Оператор use включает отображение другого экрана в данном. Актуальное
     ## содержание главного меню находится на экране навигации.
-    use navigation
+
+    use navigation(True)
 
     if gui.show_name:
 
@@ -386,7 +396,8 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    # убрал фон за кнопками главного меню
+    # background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -576,7 +587,7 @@ style about_label_text:
 ## как они почти одинаковые, оба реализованы по правилам третьего экрана —
 ## file_slots.
 ##
-## https://www.renpy.org/doc/html/screen_special.html#save 
+## https://www.renpy.org/doc/html/screen_special.html#save
 
 screen save():
 

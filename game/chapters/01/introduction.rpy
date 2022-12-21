@@ -17,6 +17,8 @@ label introdaction:
             i "Ура!!! 98 баллов по математике! Надо рассказать маме!"
             # todo
             # scene разговор с матерью
+            scene bg home with diss
+            show mother with ch_diss
             i "Мам, представляешь, я смог! 98 баллов за математику!"
             m "Молодец сынок! Я знала, что у тебя все получится!"
             i "Спасибо, что ты меня поддерживала весь этот год!"
@@ -33,8 +35,6 @@ label introdaction:
     return
 
 label .admission_to_URFU:
-    
-    
     scene bg urfu main with diss
     "И вот настал день подачи документов"
     "Баллы у меня достаточно высокие, поэтому и выбор неплохой"
@@ -48,11 +48,12 @@ label .admission_to_URFU:
             "В любом случае это лучше, чем учить математику 24/7"
             "Ладно, теперь можно наконец насладиться летом..."
             call .summer_slideshow
-            # todo
+
             scene black with diss
             "Некоторое время спустя..."
             scene bg 1st_september with diss
             "Наступает 1 сентября."
+            # TODO: i зачем?
             i "Наконец-то пришло время! Увижу своих одногруппников, возможно даже подружусь с кем-то"
             "В потоке мероприятий день незаметно перешел в вечер"
             scene bg 1st_september evening with diss
@@ -77,9 +78,9 @@ label .admission_to_URFU:
 label .summer_slideshow:
     scene bg summer 1 with diss
     "Как же классно я веселился с друзьями! Я так рад, что обрел новые знакомства!"
-    scene bg summer 1 with diss
+    scene bg summer 2 with diss
     "Я был с родителями на море! Такие красивые пейзажи..."
-    # todo
+    # TODO
     # scene пейзажи моря 2-3 штуки
     "Познакомился с девушкой! Она такая классная..."
     # scene с девушкой на мосту

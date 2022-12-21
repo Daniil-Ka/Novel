@@ -1,5 +1,6 @@
 *.rpyc
 *.rpyb
+*.bak
 traceback.txt
 errors.txt
 files.txt
