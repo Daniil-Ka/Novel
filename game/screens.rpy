@@ -285,18 +285,23 @@ style quick_button_text:
 ## Этот экран включает в себя главное и игровое меню, и обеспечивает навигацию к
 ## другим меню и к началу игры.
 
-screen navigation():
+# xalign - выравнивать ли по центру
+screen navigation(xalign=False):
 
     vbox:
         style_prefix "navigation"
 
         yalign 0.5
-        #xpos 60
+
+        if xalign:
+            xalign 0.5
+        else:
+            xpos 60
 
         spacing gui.navigation_spacing
 
         if main_menu:
-            xalign 0.5
+            #
 
             textbutton _("Начать") action Start()
 
@@ -366,7 +371,8 @@ screen main_menu():
 
     ## Оператор use включает отображение другого экрана в данном. Актуальное
     ## содержание главного меню находится на экране навигации.
-    use navigation
+
+    use navigation(True)
 
     if gui.show_name:
 

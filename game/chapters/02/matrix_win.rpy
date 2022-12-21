@@ -71,7 +71,7 @@ label matrix_win:
     teacher1 "И в правду..."
     scene black with diss
     "Где-то в другом месте..."
-    scene bg black_matrix_silhuette with diss
+    scene bg black_matrix_silhuette with Dissolve(4, time => 0 if time < 3 else time - 3)
     scene bg black_matrix_silhuette_2 with Dissolve(2.0)
     sil1 "Мы наконец-то его обнаружили."
     sil2 "Верно."

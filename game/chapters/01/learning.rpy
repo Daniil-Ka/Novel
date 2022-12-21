@@ -1,4 +1,8 @@
 label learning_start:
+    # необходимо объявить переменные
+    $condition = False
+    $is_have_answers = False
+
     define math_teacher = Character('Чуксина', color='#ff0000')
     call .choice_subjects
     call .start_of_learning
@@ -28,6 +32,7 @@ label .start_of_learning:
 
 label .math_lesson:
     scene bg math_class with diss
+    show math teacher
     "В очередной раз придя на пару по математике я услышал страшные для любого ученика слова:"
     math_teacher "На следующей паре у нас будет контрольная работа сразу по нескольким темам!"
     math_teacher "Кто не придет или опоздает, того на пересдачу не пущу!"
@@ -74,6 +79,7 @@ label .dream:
 label .interfere_in_conversation:
     "Нужно спросить что-то нейтральное, вдруг я не пришел в себя и не осознаю реальность"
     show math teacher with ch_diss
+    # TODO имя преподу!
     i "Препод_нэйм, извините, вы сейчас пишете нам задания на контрольную?"
     math_teacher "Да"
     "Она ответила и вернулась к своим записям"
