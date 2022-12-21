@@ -2,7 +2,7 @@ label matrix_win:
     show math teacher with ch_diss
     "*Препод* странно взглянула на меня и сказала:"
     math_teacher "Я чувствую, что вы еще не совсем готовы к контрольной, поэтому на сегодняшней паре мы с вами повторим материал"
-    hide math_teacher
+    hide math teacher
     "Что?"
     "Это совпадение? Не думаю"
     "Слишком уж странно она на меня посмотрела, да и такие фокусы, по рассказам второкурсников, не в её стиле"
@@ -57,7 +57,7 @@ label matrix_win:
     "Вот и новый кандидат для следующей попытки."
     scene black with diss 
     "Месяц спустя. Преподавательская."
-    scene teachers_room with diss
+    scene bg teachers_room with diss
     show teacher1 at x03 with ch_diss
     show teacher2 at x05 with ch_diss
     show teacher3 at x07 with ch_diss
@@ -71,8 +71,8 @@ label matrix_win:
     teacher1 "И в правду..."
     scene black with diss
     "Где-то в другом месте..."
-    scene black_matrix_silhuette with diss
-    scene black_matrix_silhuette_2 with Dissolve(2.0)
+    scene bg black_matrix_silhuette with diss
+    scene bg black_matrix_silhuette_2 with Dissolve(2.0)
     sil1 "Мы наконец-то его обнаружили."
     sil2 "Верно."
     sil1 "Нам стоит его прикончить."
@@ -91,6 +91,7 @@ label matrix_win:
     morpheus "Но нам очень нужны твои знания, а если ты останешься здесь, то мы снова тебя потеряем"
     morpheus "Так что у тебя нет выбора кроме как пойти с нами и спасти жителей этого мира"
     i "Хорошо, я согласен пойти с вами"
+    #TODO
     #Врывается ИИ и убивает половину команды
     #Слайды
     "Вдруг меня оглушил взрыв"
