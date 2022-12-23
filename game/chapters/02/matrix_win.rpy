@@ -134,14 +134,22 @@ label matrix_win:
     hide morpheus with ch_diss
     "Я пошел и сел в кресло для входа в матрицу..."
     scene black with diss
-    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ПРОЦЕСС ЗАПУЩЕН{/color}{/size}{/font}{/cps}"
-    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ПОДКЛЮЧЕНИЕ К СЕРВЕРУ{/color}{/size}{/font}{/cps}"
-    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ПОИСК УЯЗВИМОСТИ{/color}{/size}{/font}{/cps}"          
-    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}УЯЗВИМОСТЬ НАЙДЕНА{/color}{/size}{/font}{/cps}"
-    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}НАЧАЛО ЗАГРУЗКИ ДАННЫХ{/color}{/size}{/font}{/cps}"    
+
+    call autoskip_text("ПРОЦЕСС ЗАПУЩЕН")
+    call autoskip_text("ПОДКЛЮЧЕНИЕ К СЕРВЕРУ")
+    call autoskip_text("ПОИСК УЯЗВИМОСТИ")
+    call autoskip_text("УЯЗВИМОСТЬ НАЙДЕНА")
+    call autoskip_text("НАЧАЛО ЗАГРУЗКИ ДАННЫХ")
+  
     $progress = 0
     while progress < 101:
             show screen center_text(str(progress) + "%")
             with Pause(0.05)
             $progress += 1
             hide screen center_text
+
+    return
+
+label autoskip_text(text):
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
+    return
