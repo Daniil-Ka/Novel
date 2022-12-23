@@ -1,3 +1,8 @@
+screen center_text(s):
+    text "{font=hacked.ttf}{size=100}{color=#80ff00}[s]{/color}{/size}{/font}":
+        xalign 0.5
+        yalign 0.5
+
 label matrix_win:
     show math teacher with ch_diss
     "*Препод* странно взглянула на меня и сказала:"
@@ -20,7 +25,7 @@ label matrix_win:
     scene bg summer 2 with diss
     "Проснулся я уже стоя на волейбольной площадке рядом с другом"
     "Мы играли в пляжный волейбол два на два"
-    show friend_anton with ch_diss
+    show friend_anton beach with ch_diss
     anton "Подавай, твоя очередь!"
     i "Сейчас я им такую подачу навешаю!"
     "Я подкинул мяч и ударил со всей силы"
@@ -125,4 +130,19 @@ label matrix_win:
     scene bg riot_ship with diss
     show morpheus with ch_diss
     morpheus "Ну что, времени ждать больше нет. Придется действовать теми силами, что имеются в наличии. нейросеть уже начала подозревать о нашем плане"
-    
+    hide morpheus with ch_diss
+    "Я пошел и сел в кресло для входа в матрицу..."
+    scene black with diss
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ПРОЦЕСС ЗАПУЩЕН{/color}{/size}{/font}{/cps}"
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ПОДКЛЮЧЕНИЕ К СЕРВЕРУ{/color}{/size}{/font}{/cps}"
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ПОИСК УЯЗВИМОСТИ{/color}{/size}{/font}{/cps}"          
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}УЯЗВИМОСТЬ НАЙДЕНА{/color}{/size}{/font}{/cps}"
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}НАЧАЛО ЗАГРУЗКИ ДАННЫХ{/color}{/size}{/font}{/cps}"    
+    $progress = 0
+    while progress < 101:
+            show screen center_text(str(progress) + "%")
+            with Pause(0.05)
+            $progress += 1
+            hide screen center_text
+
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ГОТОВО{/color}{/size}{/font}{/cps}"   
