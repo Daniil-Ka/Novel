@@ -228,14 +228,14 @@ label math_test:
         "Жаль, конечно, этого добряка..."
         math_teacher "Абрамов Святослав- 5"
         "Везет кому-то, мне на такое и надеяться не стоит"
-        show girlfrend with moveinleft:
+        show girlfriend with moveinleft:
             xalign 0.1
             yalign 1.0
             zoom 0.6  
 
         math_teacher "Артемова Анастасия - 4"
         "Эх, она оказывается еще и умная..."
-        hide girlfrend with ch_diss
+        hide girlfriend with ch_diss
         math_teacher "*фамилия игрока* - 2, хотя, будь моя воля, я бы поставила кол"
         "Да-а-а, вот же, придется к ней на отработку идти, чтобы без стипендии не остаться"
         call data_science_ending
