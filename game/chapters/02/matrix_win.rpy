@@ -58,9 +58,9 @@ label matrix_win:
     scene black with diss 
     "Месяц спустя. Преподавательская."
     scene bg teachers_room with diss
-    show teacher1 at x03 with ch_diss
+    show teacher1 at x02 with ch_diss
     show teacher2 at x05 with ch_diss
-    show teacher3 at x07 with ch_diss
+    show teacher3 at x08 with ch_diss
     teacher1 "teacher2, ты чего такая задумчивая?"
     teacher2 "Да вот, странно как-то, что ни контрольная, так снится мне один студент."
     teacher2 "И, что самое интересное, после этого всегда пишет контрольную на максимальный балл"
