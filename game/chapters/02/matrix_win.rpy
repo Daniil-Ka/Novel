@@ -81,11 +81,11 @@ label matrix_win:
     scene bg black_matrix_silhuette_2 with Dissolve(2.0)
     sil1 "Мы наконец-то его обнаружили."
     sil2 "Верно."
-    sil1 "Нам стоит его прикончить."
+    sil1 "Нам стоит его устранить."
     sil2 "Верно"
     sil1 "Он можен принести нам много вреда."
     sil2 "Верно"
-    sil1 "Тогда пора действовать."
+    sil1 "Тогда снова пора действовать."
     sil2 "Верно"
 
     #TODO Схватка ИИ и Сопротивления, слайдшоу или что я хз
@@ -147,7 +147,8 @@ label matrix_win:
             with Pause(0.05)
             $progress += 1
             hide screen center_text
-
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}ГОТОВО{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
+    call matrix_win_ending
     return
 
 label autoskip_text(text):

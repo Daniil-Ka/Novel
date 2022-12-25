@@ -1,7 +1,7 @@
 ﻿# Определение персонажей игры.
 define i = Character('Я', color='#d3fd2a')
 define noname = Character('???', color='#fff7c8')
-define m = Character('Мамочка', color='#40ca40')
+define m = Character('Мама', color='#40ca40')
 define anton = Character("Антон", color = '#eaaf19ff')
 define teacher1 = Character("*учитель1*")
 define teacher2 = Character("*учитель2*")
@@ -9,6 +9,7 @@ define teacher3 = Character("*учитель3*")
 define sil1 = Character("Силуэт 1")
 define sil2 = Character("Силуэт 2")
 define morpheus = Character("Морфеус")
+define agent = Character("Смит")
 #Определение основного перехода
 define diss = Dissolve(1.0)
 define ch_diss = Dissolve(0.5)
