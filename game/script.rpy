@@ -50,4 +50,13 @@ image black = "#000000ff"
 
 label start:
     call introdaction
+    return
+
+#ЗАСТАВКИ
+label autoskip_text_green(text):
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
+    return 
+
+label autoskip_text_white(text):
+    centered "{cps=15}{font=hacked.ttf}{size=100}[text]{/size}{/font}{/cps}{w=1.0}{nw}"
     return 
