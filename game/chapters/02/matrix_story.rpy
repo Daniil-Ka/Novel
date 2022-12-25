@@ -1,5 +1,5 @@
 label matrix_story:
-    scene flat_of_riot with diss
+    
     #TODO Дописать смену картинок фонов
     show morpheus with ch_diss
     show matrix_girl at x02 behind morpheus with ch_diss

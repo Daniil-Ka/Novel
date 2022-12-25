@@ -25,5 +25,6 @@ label red_pill:
     "Вечного сна..."
     morpheus "Пошли со мной, я покажу тебе, что стало с этим миром, пока тебя не было..."
     #TODO Слайд-шоу ужасающего мира матрицы
-
+    scene bg riot_ship with diss
+    show morpheus with ch_diss
     return

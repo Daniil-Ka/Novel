@@ -10,6 +10,7 @@ define sil1 = Character("Силуэт 1")
 define sil2 = Character("Силуэт 2")
 define morpheus = Character("Морфеус")
 define agent = Character("Смит")
+define o = Character("Организатор хакатона")
 #Определение основного перехода
 define diss = Dissolve(1.0)
 define ch_diss = Dissolve(0.5)
