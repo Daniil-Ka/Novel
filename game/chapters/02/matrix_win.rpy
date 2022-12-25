@@ -15,7 +15,7 @@ label matrix_win:
     scene bg urfu rtf holl with diss
     "После пары я отправился домой, чтобы вечером проверить одну теорию..."
     scene black with diss
-    "Несколько часов спустя..."
+    call autoskip_text_white("Несколько часов спустя...")
     scene bg home night with diss
     "Я весь день думал над произошедшим"
     "Правда ли я могу попадать в чужие сны? Если это так, то что мне нужно для это сделать?"
@@ -32,8 +32,8 @@ label matrix_win:
     "Мяч отскочил от руки и полетел прямиком Антону в лицо"
     "Антон упал от полученного удара"
     scene black with diss
-    "После этих слов что-то невидимое вытащило меня из сна"
-    "Это был будильник"
+    call autoskip_text_white("После этих слов что-то невидимое вытащило меня из сна")
+    call autoskip_text_white("Это был будильник")
     scene bg home with diss
     "Пора идти на пары, там нужно будет постараться узнать от Антона о его сне"
     scene bg urfu rtf holl with diss
@@ -61,7 +61,7 @@ label matrix_win:
     "Точно! У меня же завтра контрольная по английскому."
     "Вот и новый кандидат для следующей попытки."
     scene black with diss 
-    "Месяц спустя. Преподавательская."
+    call autoskip_text_white("Месяц спустя. Преподавательская.")
     scene bg teachers_room with diss
     show teacher1 at x02 with ch_diss
     show teacher2 at x05 with ch_diss
@@ -75,7 +75,7 @@ label matrix_win:
     teacher3 "Представляете, мне тоже! Как-то странно все это..."
     teacher1 "И в правду..."
     scene black with diss
-    "Где-то в другом месте..."
+    call autoskip_text_white("Где-то в другом месте...")
     scene bg black_matrix_silhuette with diss
     scene bg black_matrix_silhuette with Pause(3)# time_warp=time => 0 if time < 3 else time - 3)
     scene bg black_matrix_silhuette_2 with Dissolve(2.0)
@@ -104,7 +104,7 @@ label matrix_win:
     "В комнате поднялась пыль и ворвались десятки клонов"
     "Единственное, что я успел сделать - это схватить красную таблетку и проглотить её"
     scene black with diss
-    "Сознание помутнилось и я отключился"
+    call autoskip_text_white("Сознание помутнилось и я отключился")
     call red_pill
 
     scene bg riot_ship with diss
@@ -127,7 +127,7 @@ label matrix_win:
     morpheus "Теперь, когда у нас есть все необходимое, нам осталось только дождаться твоего полного восстановления"
     morpheus "А затем мы приведем наш план в действие и наконец отключим эту нейросеть!"
     scene black with diss
-    "Две недели я упорно тренировался и восстанваливал свои навыки."
+    call autoskip_text_white("Две недели я упорно тренировался и восстанваливал свои навыки.")
     scene bg riot_ship with diss
     show morpheus with ch_diss
     morpheus "Ну что, времени ждать больше нет. Придется действовать теми силами, что имеются в наличии. нейросеть уже начала подозревать о нашем плане"
