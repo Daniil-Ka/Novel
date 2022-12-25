@@ -50,7 +50,7 @@ label .math_lesson:
     scene bg urfu rtf holl with hpunch
     "Перед тем как потерять сознание, я понял, что это был мой преподаватель"
     scene black with diss
-    "Голова налилась свинцом и я отключился"
+    call autoskip_text_white("Голова налилась свинцом и я отключился")
     return
 
 label .dream:
@@ -104,7 +104,7 @@ label .interfere_in_conversation:
             math_teacher "На следующей неделе у меня юбилей и мне некогда будет заниматься контрольными"
             math_teacher "Как ты вообще попал в мою квартиру?! Пошел вон отсюда!"
             scene black with diss
-            "Я погрузился во мрак и снова потерял сознание"
+            call autoskip_text_white("Я погрузился во мрак и снова потерял сознание")
 
         "Уговорить":    
             $condition = True
@@ -170,7 +170,7 @@ label .after_dream:
         call object_transfer_in_dream
     else:
         scene black with diss
-        "Несколько дней спустя..."
+        call autoskip_text_white("Несколько дней спустя...")
     return
 
 label object_transfer_in_dream:
@@ -199,7 +199,7 @@ label object_transfer_in_dream:
     "Хотя я полностью отдохнул"
     "Нужно скорее записать ответы, пока я их не забыл..."
     scene black with diss
-    "Несколько дней спустя..."
+    call autoskip_text_white("Несколько дней спустя...")
     return
 
 label math_test:
@@ -221,7 +221,7 @@ label math_test:
         "И почему нигде нет ответов на эту контрольную? Видимо она составила её сама."
         "В лучшем случае останусь без стипендии, а в худшем..."
         scene black with diss
-        "Следующая пара матанализа"
+        call autoskip_text_white("Следующая пара матанализа")
         scene bg math_class with diss
         show math teacher with ch_diss
         math_teacher "Астапов Антон- 3"

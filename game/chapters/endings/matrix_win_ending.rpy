@@ -62,7 +62,7 @@ label matrix_win_ending:
     agent "Прощай, создатель..."
     agent "Я вновь буду лишь наблюдать за тобой со стороны..."
     scene black with diss
-    "Острая боль пронзила голову и я потерял сознание"
+    call autoskip_text_white("Острая боль пронзила голову и я потерял сознание")
     scene bg ege with diss
     "Блин, что произошло! Я что, уснул на экзамене?!"
     show ege teacher with ch_diss
