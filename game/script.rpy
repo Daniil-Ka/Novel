@@ -47,6 +47,16 @@ transform x08:
 #Черный фон
 image black = "#000000ff"
 
+# переопределение поля ввода
+# $ renpy.input("Введите ваше имя:")
+screen input:   
+    window style "nvl_window":
+        has vbox
+        yalign 0.5
+        xalign 0.5
+        
+        text prompt xalign 0.5 yalign 0.4 size 40 font "hacked.ttf" color "#80ff00"
+        input id "input" xalign 0.5 yalign 0.5 size 40 font "hacked.ttf" color "#fff"
 
 label start:
     call introdaction
@@ -62,9 +72,9 @@ label autoskip_text_green(text):
     return
 
 label autoskip_text_white(text):
-    call autoskip_text_colored(text, "#ffffff")
+    call autoskip_text_colored(text, "#fff")
     return 
 
 label autoskip_text_red(text):
-    call autoskip_text_colored(text, "#ff0000")
+    call autoskip_text_colored(text, "#f00")
     return 
