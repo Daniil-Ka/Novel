@@ -20,6 +20,8 @@ label .choice_subjects:
     return
 
 label .start_of_learning:
+    scene black with diss
+    call autoskip_text_white("МЕСЯЦ СПУСТЯ")
     scene bg urfu rtf holl with diss
     "Дни мелькали один за другим"
     "Я познакомился с преподавателями"
@@ -50,7 +52,8 @@ label .math_lesson:
     scene bg urfu rtf holl with hpunch
     "Перед тем как потерять сознание, я понял, что это был мой преподаватель"
     scene black with diss
-    call autoskip_text_white("Голова налилась свинцом и я отключился")
+    "Голова налилась свинцом и я отключился"
+    call autoskip_text_green("TRYING TO ACCESS")
     return
 
 label .dream:
@@ -104,11 +107,13 @@ label .interfere_in_conversation:
             math_teacher "На следующей неделе у меня юбилей и мне некогда будет заниматься контрольными"
             math_teacher "Как ты вообще попал в мою квартиру?! Пошел вон отсюда!"
             scene black with diss
-            call autoskip_text_white("Я погрузился во мрак и снова потерял сознание")
+            "Я погрузился во мрак и снова потерял сознание"
 
         "Уговорить":    
             $condition = True
             #TODO
+            scene black with diss
+            "Я погрузился во мрак и снова потерял сознание"
     return
 
 label .not_interfere_in_conversation:
@@ -119,7 +124,7 @@ label .not_interfere_in_conversation:
     "Я быстро спрятался в тени коридора и она прошла мимо меня"
     "Пронесло"
     "Интересно, что она там писала? Может ответы на предстоящую контрольную?"
-
+    #TODO СТОЛ С ОТВЕТАМИ!
     menu:
         "Проверить?"
         "Да":
@@ -142,6 +147,8 @@ label .not_interfere_in_conversation:
     return
 
 label .after_dream:
+    scene black with diss
+    call autoskip_text_green("ADMINISTRATOR PERMISSIONS CONFIRMED")
     scene bg urfu rtf holl with diss                
     "Наконец, я очнулся. Странный был сон, но вроде бы теперь все в порядке"
     "Я посмотрел на учительницу лежащую рядом"
@@ -178,8 +185,7 @@ label object_transfer_in_dream:
     "Странное место"
     "Это осознанное сноведение?"
     "Хотя, после сегодняшних событий я уже ни чему не удивляюсь"
-    "Стол как у **"
-    "На нем что-то лежит..."
+    "На столе что-то лежит..."
     scene bg table_with_answers with diss
     "Это же ответы!"
     "Но откуда они тут взялись?"
@@ -193,6 +199,7 @@ label object_transfer_in_dream:
     "Возможно, легче было бы понять учебный материал"
     "Но какой студент упустит возможность списать?"
     scene black with diss
+    call autoskip_text_green("DOWNLOAD COMLETE")
     scene bg home with diss
     "Я проснулся за 5 минут до будильника и отключил его"
     "Такое ощущение, будто бы не спал"

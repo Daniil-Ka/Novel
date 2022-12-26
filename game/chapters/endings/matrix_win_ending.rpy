@@ -1,4 +1,5 @@
 label matrix_win_ending:
+    scene tv_room with diss
     "Я очнулся в каком-то странном месте"
     #TODO Прописать описание окружения и эмоции
     show matrix_agent with pixellate
@@ -68,5 +69,6 @@ label matrix_win_ending:
     show ege teacher with ch_diss
     "Учитель" "Внимание! До конца экзамена осталось 5 минут!"
     hide ege teacher with ch_diss
-    call ending("КОНЕЦ")
+    scene black with diss
+    call autoskip_text_white("TO BE CONTINUED")
     return

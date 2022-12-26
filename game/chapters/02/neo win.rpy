@@ -1,6 +1,7 @@
 label neo_win:
-    scene black with diss
-    call autoskip_text_white("НЕКОТОРОЕ ВРЕМЯ СПУСТЯ")
+    show math teacher with ch_diss
+    math_teacher "Варианты считать от окна! На работу вас 45 минут!"
+    "Староста группы положила мне на стол работу"
     scene table_with_answers with diss
     "Что за черт?!"
     "Это и в правду те же задания, что и в моем сне"
@@ -44,25 +45,26 @@ label neo_win:
     "Может попробовать попасть в его сон и узнать о нем побольше?"
     "Ладно, теперь нужно сосредоточиться на мыслях об отце, хоть я и не особо много знаю..."
     scene black with diss
-    centered "{cps=25}{font=hacked.ttf}{size=100}{color=#80ff00}ACCES DENIED{/color}{/size}{/font}{/cps}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#80ff00} {/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{cps=25}{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{/cps}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
+    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
     "Что за фигня?"
     "Раньше всегда получалось!"
     "Голова раскалывается"
     "Ладно, лучше будет разобраться с этим завтра..."
     call autoskip_text_white("Где-то в другом месте...")
-    #TODO ФОН
+    scene riot_happy with diss
     noname "Мы обнаружили его!"
     noname "Наконец!"
     noname "Спустя столько лет..."
+    scene black with diss
     call autoskip_text_white("НЕДЕЛЯ СПУСТЯ")
     scene bg home with diss
     "Важный день"

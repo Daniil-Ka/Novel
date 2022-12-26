@@ -1,8 +1,8 @@
 ﻿# Определение персонажей игры.
 define i = Character('Я', color='#d3fd2a')
-define noname = Character('???', color='#fff7c8')
+define noname = Character('???', color='#ffc8c8')
 define m = Character('Мама', color='#40ca40')
-define anton = Character("Антон", color = '#eaaf19ff')
+define anton = Character("Антон", color = '#ff0000ff')
 define teacher1 = Character("*учитель1*")
 define teacher2 = Character("*учитель2*")
 define teacher3 = Character("*учитель3*")
@@ -60,4 +60,8 @@ label autoskip_text_green(text):
 
 label autoskip_text_white(text):
     centered "{cps=15}{font=hacked.ttf}{size=100}[text]{/size}{/font}{/cps}{w=1.0}{nw}"
+    return 
+
+label autoskip_text_red(text):
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#ff0000ff}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
     return 
