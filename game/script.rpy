@@ -1,19 +1,42 @@
 ﻿# Определение персонажей игры.
-define i = Character('Я', color='#d3fd2a')
-define noname = Character('???', color='#ffc8c8')
-define m = Character('Мама', color='#40ca40')
-define anton = Character("Антон", color = '#ff0000ff')
-define teacher1 = Character("*учитель1*")
-define teacher2 = Character("*учитель2*")
-define teacher3 = Character("*учитель3*")
-define sil1 = Character("Силуэт 1")
-define sil2 = Character("Силуэт 2")
-define morpheus = Character("Морфеус")
-define agent = Character("Смит")
-define o = Character("Организатор хакатона")
+define noname = Character('???', color='#bababa')
+define m = Character('Мама', color='#ea00ff')
+define anton = Character("Антон", color = '#421eceff')
+define teacher1 = Character("Аркадий Петрович", color='#3d82ad')
+define teacher2 = Character("Денис Борисович", color='#beeeb4')
+define teacher3 = Character("Георгий Владимирович", color='#e1e48e')
+define sil1 = Character("Силуэт 1", color='#ff0000')
+define sil2 = Character("Силуэт 2", color='#ff0000')
+define morpheus = Character("Морфеус", color='#9000ff')
+define agent = Character("Смит", color='#00ff51')
+define o = Character("Организатор хакатона", color='#ef9797')
+define math_teacher = Character('Светлана Владимировна', color='#ff5100')
+
 #Определение основного перехода
 define diss = Dissolve(1.0)
 define ch_diss = Dissolve(0.5)
+
+#Анимированные спрайты
+image matrix_agent:
+    "smit"
+    pause 1
+    "glitch1"
+    pause .1
+    "smit"
+    pause 1.2
+    "glitch2"
+    pause .1
+    "smit"
+    pause .3
+    "glitch3"
+    pause .1
+    "smit"
+    pause 1
+    "glitch4"
+    pause .1
+    "smit"
+    repeat
+    
 
 #Определение позиций
 transform x02:
@@ -59,6 +82,10 @@ screen input:
         input id "input" xalign 0.5 yalign 0.5 size 40 font "hacked.ttf" color "#fff"
 
 label start:
+    python:
+        name = renpy.input("Введите ваше имя:")
+        name = name.strip() or "Шадрин Дата Бэйс"
+    define i = Character("[name]", color='#40ca40')
     call introdaction
     return
 

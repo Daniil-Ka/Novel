@@ -27,7 +27,7 @@ label neo_win:
     call autoskip_text_white("ДВЕ НЕДЕЛИ СПУСТЯ")
     scene bg math_class with diss
     show math teacher with ch_diss
-    math_teacher "name, снова отличный результат! В последнее время делаешь успехи в учебе!"
+    math_teacher "[name], снова отличный результат! В последнее время делаешь успехи в учебе!"
     i "Это все благодаря вашей методичке, в ней все очень хорошо расписано"
     math_teacher "Приятно слышать"
     hide math_teacher with ch_diss
