@@ -48,20 +48,23 @@ transform x08:
 image black = "#000000ff"
 
 
-
 label start:
     call introdaction
     return
 
 #ЗАСТАВКИ
+label autoskip_text_colored(text, text_color):
+    centered "{cps=15}{font=hacked.ttf}{size=100}{color=[text_color]}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
+    return
+
 label autoskip_text_green(text):
-    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#80ff00}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
-    return 
+    call autoskip_text_colored(text, "#80ff00")
+    return
 
 label autoskip_text_white(text):
-    centered "{cps=15}{font=hacked.ttf}{size=100}[text]{/size}{/font}{/cps}{w=1.0}{nw}"
+    call autoskip_text_colored(text, "#ffffff")
     return 
 
 label autoskip_text_red(text):
-    centered "{cps=15}{font=hacked.ttf}{size=100}{color=#ff0000ff}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
+    call autoskip_text_colored(text, "#ff0000")
     return 
