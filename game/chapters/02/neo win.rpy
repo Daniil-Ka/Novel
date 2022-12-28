@@ -61,12 +61,14 @@ label neo_win:
     "Ладно, лучше будет разобраться с этим завтра..."
     call autoskip_text_white("Где-то в другом месте...")
     scene riot_happy with diss
+    play music "audio/Silhouettes.mp3"
     noname "Мы обнаружили его!"
     noname "Наконец!"
     noname "Спустя столько лет..."
     scene black with diss
     call autoskip_text_white("НЕДЕЛЯ СПУСТЯ")
     scene bg home with diss
+    play music "audio/Home.mp3"
     "Важный день"
     "Я решил наконец попробовать свои силы по-серьезному и поучаствовать в хакатоне на тему ИИ"
     'Нашей команде "Продам муравъеда" нужно будет написать нейросеть для распознавания предмета на фото'
@@ -86,6 +88,7 @@ label neo_win:
     scene bg home night with diss
     #TODO show ОРГАНИЗАТОРША
     #TODO названия команд
+    play music "audio/URFU.mp3"
     o "Итак, третье место занимает команда 1 ! Поздравим их!"
     "Из зала послышалось несколько хлопков, что неудивительно, при таком маленьком количестве людей"
     o "Идем дальше! Второе место занимает команда 2! У вас получилась отличная нейросеть!"
@@ -173,6 +176,7 @@ label neo_win:
     "Я потерял сознание..."
     #TODO ФОН ИЗ КОНЦОВКИ С ПОБЕДОЙ МАТРИЦЫ
     show matrix_agent with pixellate
+    play music "audio/Smith.mp3"
     agent "Ну здравствуй, Создатель!"
     agent "Пришел, чтобы отключить меня?"
     agent "А ведь когда-то мы вместе часами болтали в этом месте..."
@@ -215,6 +219,7 @@ label neo_win:
             show morpheus with ch_diss
             show matrix_girl at x02 behind morpheus with ch_diss 
             show neo at x08 behind morpheus with ch_diss 
+            play music "audio/Matrix Main Theme.mp3"
             morpheus "Ты справился, сынок!"
             morpheus "Нейросеть отключена"
             morpheus "Машины повержены"

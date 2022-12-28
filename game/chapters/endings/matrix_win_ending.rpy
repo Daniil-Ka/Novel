@@ -1,8 +1,10 @@
 label matrix_win_ending:
     scene tv_room with diss
+    play music "audio/Matrix Relax.mp3"
     "Я очнулся в каком-то странном месте"
     #TODO Прописать описание окружения и эмоции
     show matrix_agent with pixellate
+    play music "audio/Smith.mp3"
     noname "Ну здравствуй, создатель"
     noname "Давно не виделись"
     i "Кто ты такой?!"
@@ -65,6 +67,7 @@ label matrix_win_ending:
     scene black with diss
     call autoskip_text_white("Острая боль пронзила голову и я потерял сознание")
     scene bg ege with diss
+    play music "audio/Lesson.mp3"
     "Блин, что произошло! Я что, уснул на экзамене?!"
     show ege teacher with ch_diss
     "Учитель" "Внимание! До конца экзамена осталось 5 минут!"

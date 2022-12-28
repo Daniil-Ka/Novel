@@ -12,6 +12,7 @@ label learning_start:
 
 label .choice_subjects:
     show bg home with diss
+    play sound "audio/Alarm Clock.mp3"
     "Звонок будильника, пора вставать"
     "Сегодня важный день! Вчера наставники рассказали, что сегодня день выбора предметов!"
     "Нужно постараться и успеть выбрать нужные курсы и удобное расписание, иначе придется ждать еще семестр до следующей смены расписания"
@@ -21,6 +22,7 @@ label .start_of_learning:
     scene black with diss
     call autoskip_text_white("МЕСЯЦ СПУСТЯ")
     scene bg urfu rtf holl with diss
+    play music "audio/URFU RTF.mp3"
     "Дни мелькали один за другим"
     "Я познакомился с преподавателями"
     "Сходил на различные мероприятия"
@@ -33,6 +35,7 @@ label .start_of_learning:
 
 label .math_lesson:
     scene bg math_class with diss
+    play music "audio/Lesson.mp3"
     show math teacher
     "В очередной раз придя на пару по математике я услышал страшные для любого ученика слова:"
     math_teacher "На следующей паре у нас будет контрольная работа сразу по нескольким темам!"
@@ -45,6 +48,7 @@ label .math_lesson:
     math_teacher "На сегодня все, можете быть свободны"
     "Я вышел из класса и побрел в сторону буфета, намереваясь заглушить свое горе парой бутербродов из тогрового автомата"
     scene bg urfu rtf holl with diss
+    play music "audio/URFU RTF.mp3"
     "Уже на подходе к буфету я вспомнил, что оставил в аудитории свою куртку, и нужно поторопиться, чтобы не искать потом ключи от замка"
     "Я так торопился, что не заметил открывающейся двери и столкнулся головами с выходящим человеком"
     scene bg urfu rtf holl with hpunch
@@ -56,6 +60,7 @@ label .math_lesson:
 
 label .dream:
     scene bg teacher_home with diss
+    play music "audio/Dream.mp3"
     "Странно, раньше я не видел такой аудитории в институте"
     "Все выглядит по-домашнему, тепло и уютно"
     "За столом сидит Светлана Владимировна и что-то пишет на листочках"
@@ -146,7 +151,8 @@ label .not_interfere_in_conversation:
 label .after_dream:
     scene black with diss
     call autoskip_text_green("ADMINISTRATOR PERMISSIONS CONFIRMED")
-    scene bg urfu rtf holl with diss                
+    scene bg urfu rtf holl with diss
+    play music "audio/URFU RTF.mp3"
     "Наконец, я очнулся. Странный был сон, но вроде бы теперь все в порядке"
     "Я посмотрел на учительницу лежащую рядом"
     "Светлана Владимировна тоже приходила в сознание"
@@ -164,6 +170,7 @@ label .after_dream:
     if vmeshalsya:
         "Странный силуэт мелькнул в толпе..."
     scene bg home with diss
+    play music "audio/Home.mp3"
     "Я дошел до дома и начал думать, что делать дальше"
     "Можно начать готовиться к контрольной, наверное, это самое полезное, что я сейчас могу сделать"
     "Но голова начала так сильно болеть и я решил лечь спать"
@@ -179,6 +186,7 @@ label .after_dream:
 
 label object_transfer_in_dream:
     scene bg white_room_dream with diss
+    play music "audio/Dream.mp3"
     "Странное место"
     "Это осознанное сноведение?"
     "Хотя, после сегодняшних событий я уже ни чему не удивляюсь"
@@ -198,6 +206,7 @@ label object_transfer_in_dream:
     scene black with diss
     call autoskip_text_green("DOWNLOAD COMLETE")
     scene bg home with diss
+    play music "audio/Home.mp3"
     "Я проснулся за 5 минут до будильника и отключил его"
     "Такое ощущение, будто бы не спал"
     "Хотя я полностью отдохнул"
@@ -208,6 +217,7 @@ label object_transfer_in_dream:
 
 label math_test:
     scene bg math_class with diss
+    play music "audio/Lesson.mp3"
     "\"Долгожданный\" день настал. Сегодня придется писать контрольную, а я так и не смог к ней подготовиться"
     #Вмешался, кр перенесли
     if vmeshalsya and condition: 

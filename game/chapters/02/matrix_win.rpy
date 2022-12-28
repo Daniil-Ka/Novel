@@ -25,6 +25,7 @@ label matrix_win:
     scene black with diss
     call autoskip_text_green("CONNECTING TO HOST")
     scene bg summer 2 with diss
+    play music "audio/Beach.mp3"
     "Проснулся я уже стоя на волейбольной площадке рядом с другом"
     "Мы играли в пляжный волейбол два на два"
     show friend_anton beach with ch_diss
@@ -35,10 +36,12 @@ label matrix_win:
     "Антон упал от полученного удара"
     scene black with diss
     "После этого что-то невидимое вытащило меня из сна"
+    play sound "audio/Alarm Clock.mp3"
     "Это был будильник"
     scene bg home with diss
     "Пора идти на пары, там нужно будет постараться узнать от Антона о его сне"
     scene bg urfu rtf holl with diss
+    play music "audio/URFU RTF.mp3"
     show friend_anton with ch_diss
     anton "Привет, давно не виделись!"
     i "Привет, и в правду давно"
@@ -60,6 +63,7 @@ label matrix_win:
     scene black with diss
     call autoskip_text_white("ВЕЧЕР ТОГО ЖЕ ДНЯ")
     scene bg home night with diss
+    play sound "audio/Home.mp3"
     "Итак, выбираем кандидата."
     "К кому бы попробовать проникнуть?"
     "Точно! У меня же завтра контрольная по английскому."
@@ -67,6 +71,7 @@ label matrix_win:
     scene black with diss 
     call autoskip_text_white("Месяц спустя. Преподавательская.")
     scene bg teachers_room with diss
+    play sound "audio/Teaching Room.mp3"
     show teacher1 at x02 with ch_diss
     show teacher2 at x05 with ch_diss
     show teacher3 at x08 with ch_diss
@@ -80,6 +85,7 @@ label matrix_win:
     teacher1 "И в правду..."
     scene black with diss
     call autoskip_text_white("Где-то в другом месте...")
+    play sound "audio/Silhouettes.mp3"
     scene bg black_matrix_silhuette with diss
     scene bg black_matrix_silhuette with Pause(3)
     scene bg black_matrix_silhuette_2 with Dissolve(2.0)

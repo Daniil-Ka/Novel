@@ -1,5 +1,6 @@
 label matrix_story:
     scene bg flat_of_riot with diss
+    play music "audio/Matrix Main Theme.mp3"
     show morpheus with ch_diss
     show matrix_girl at x02 behind morpheus with ch_diss
     show neo at x08 behind morpheus with ch_diss

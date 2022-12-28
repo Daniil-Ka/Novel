@@ -4,4 +4,6 @@ label mobilization_ending:
     "Это конец..."
 
     scene bg mobilization with diss
+    play music "audio/Mobilization.mp3"
+    
     call ending("На следующий день вам пришла повестка...")

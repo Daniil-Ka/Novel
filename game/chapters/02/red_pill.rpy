@@ -1,5 +1,6 @@
 label red_pill:
     scene bg riot_ship with diss
+    play music "audio/Morpheus.mp3"
     show morpheus with ch_diss
     morpheus "О, уже пришел в себя?"
     morpheus "Обычно проходит несколько суток, прежде чем люди приходят в сознание после отключения от систем жизнеобеспечения"

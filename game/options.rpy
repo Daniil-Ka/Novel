@@ -116,6 +116,9 @@ define config.window = "auto"
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
 
+## продолжительность затухания музыки
+define config.fade_music = 0.4
+
 
 ## Стандартные настройки #######################################################
 
