@@ -45,16 +45,18 @@ label neo_win:
     "Может попробовать попасть в его сон и узнать о нем побольше?"
     "Ладно, теперь нужно сосредоточиться на мыслях об отце, хоть я и не особо много знаю..."
     scene black with diss
-    centered "{cps=25}{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{/cps}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCES DENIED{/color}{/size}{/font}{w=0.5}{nw}"
-    centered "{font=hacked.ttf}{size=100}{color=#ff0000ff} {/color}{/size}{/font}{w=0.5}{nw}"
+
+    $ type_sound("ACCESS DENIED")
+    centered "{cps=25}{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCESS DENIED{/color}{/size}{/font}{/cps}{w=0.5}{nw}"
+    play sound "audio/Access Denied.mp3"
+    $ type_sound_stop()
+
+    $ count = 4
+    while count > 0:
+        centered "{w=0.5}{font=hacked.ttf}{size=100}{color=#f00}ACCESS DENIED{/color}{/size}{/font}{w=0.5}{nw}"
+        play sound "audio/Access Denied.mp3"
+        $ count -= 1
+
     "Что за фигня?"
     "Раньше всегда получалось!"
     "Голова раскалывается"
@@ -227,7 +229,10 @@ label neo_win:
             i "Да..."
             i "Светлое..."
             scene black with diss
+
+            $ type_sound("TO BE CONTINUED")
             centered "{cps=5}{font=hacked.ttf}{size=100}TO BE CONTINUED{/size}{/font}{/cps}{w=100}{nw}"
+            $ type_sound_stop()
 
         "Оставить нейросеть":
             i "Ты прав, человечество действительно не сможет перенести выход из нейросети в такую реальность..."
@@ -247,7 +252,13 @@ label neo_win:
             "А может..."
             "Нужно будет проверить наличие прав администратора..."
             scene black with diss
-            centered "{cps=5}{font=hacked.ttf}{size=100}TO BE CONTINUED{/size}{/font}{/cps}{w=100}{nw}"
-            centered "{cps=40}{font=hacked.ttf}{size=100}{color=#80ff00}ACCESS IS ALLOWED{/color}{/size}{/font}{/cps}{w=0.1}{nw}"
 
+            $ type_sound("TO BE CONTINUED")
+            centered "{cps=5}{font=hacked.ttf}{size=100}TO BE CONTINUED{/size}{/font}{/cps}{w=100}{nw}"
+            $ type_sound_stop()
+
+            $ type_sound("ACCESS IS ALLOWED")
+            centered "{cps=40}{font=hacked.ttf}{size=100}{color=#80ff00}ACCESS IS ALLOWED{/color}{/size}{/font}{/cps}{w=0.1}{nw}"
+            $ type_sound_stop()
+    
     return

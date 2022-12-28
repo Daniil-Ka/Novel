@@ -1,15 +1,16 @@
 define sounds = ['audio/Typewriter/v1.ogg', 'audio/Typewriter/v2.ogg', 'audio/Typewriter/v3.ogg', 'audio/Typewriter/v4.ogg', 'audio/Typewriter/v5.ogg']
+define typewriter = u'typewriter'
 
 init python:
-    renpy.music.register_channel("typewriter", "sfx")
+    renpy.music.register_channel(typewriter, "sfx")
 
     def type_sound(text):
-        renpy.sound.play(renpy.random.choice(sounds))
+        renpy.sound.play(renpy.random.choice(sounds), channel=typewriter)
         for _ in range(len(text) // 5):
-            renpy.sound.queue(renpy.random.choice(sounds))
+            renpy.sound.queue(renpy.random.choice(sounds), channel=typewriter)
 
     def type_sound_stop():
-        renpy.sound.stop()
+        renpy.sound.stop(channel=typewriter)
 
 #ЗАСТАВКИ
 label autoskip_text_colored(text, text_color):
