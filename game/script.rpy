@@ -72,14 +72,19 @@ image black = "#000000ff"
 
 # переопределение поля ввода
 # $ renpy.input("Введите ваше имя:")
+style input_style:
+    font "hacked.ttf"
+    xalign 0.5
+    size 40
+
 screen input:   
     window style "nvl_window":
         has vbox
         yalign 0.5
         xalign 0.5
         
-        text prompt xalign 0.5 yalign 0.4 size 40 font "hacked.ttf" color "#80ff00"
-        input id "input" xalign 0.5 yalign 0.5 size 40 font "hacked.ttf" color "#fff"
+        text prompt yalign 0.4 color "#80ff00" style "input_style"
+        input id "input" yalign 0.5 color "#fff" style "input_style"
 
 label start:
     python:

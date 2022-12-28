@@ -1,13 +1,13 @@
 Музыка:
 	Главное меню (Matrix Relax)
 	Титры (Matrix Credits)
-	Класс
-	Урфу
-	РТФ - похоже на урфу
+	Класс (Lesson)
+	Урфу (URFU)
+	РТФ - похоже на урфу (URFU RTF)
 	Сон (Dream)
 	Дом (Home)
 	Пляж (Beach)
-	Преподовательская
+	Преподовательская (Teaching Room)
 	Силуэты (Silhouettes)
 	Матрица (Matrix Main Theme)
 	История от Морфеуса (Morpheus)
@@ -16,8 +16,8 @@
 
 Концовки:
 	Мобилизация (Mobilization)
-	Отчисление
+	Отчисление (Expulsion)
 
 Звуки:
-	Будильник ()
-	Взрыв ()
+	Будильник (Alarm Clock)
+	Взрыв (Boom)
