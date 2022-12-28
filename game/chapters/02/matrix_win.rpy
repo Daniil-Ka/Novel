@@ -63,7 +63,7 @@ label matrix_win:
     scene black with diss
     call autoskip_text_white("ВЕЧЕР ТОГО ЖЕ ДНЯ")
     scene bg home night with diss
-    play sound "audio/Home.mp3"
+    play music "audio/Home.mp3"
     "Итак, выбираем кандидата."
     "К кому бы попробовать проникнуть?"
     "Точно! У меня же завтра контрольная по английскому."
@@ -71,10 +71,10 @@ label matrix_win:
     scene black with diss 
     call autoskip_text_white("Месяц спустя. Преподавательская.")
     scene bg teachers_room with diss
-    play sound "audio/Teaching Room.mp3"
-    show teacher1 at x02 with ch_diss
-    show teacher2 at x05 with ch_diss
-    show teacher3 at x08 with ch_diss
+    play music "audio/Teaching Room.mp3"
+    show teacher1 at xt1 with ch_diss
+    show teacher2 at xt2 with ch_diss
+    show teacher3 at xt3 with ch_diss
     teacher1 "Борисыч, ты чего такой задумчивый?"
     teacher2 "Да вот, странно как-то, что ни контрольная, так снится мне один студент."
     teacher2 "И, что самое интересное, после этого всегда пишет контрольную на максимальный балл"
@@ -85,7 +85,7 @@ label matrix_win:
     teacher1 "И в правду..."
     scene black with diss
     call autoskip_text_white("Где-то в другом месте...")
-    play sound "audio/Silhouettes.mp3"
+    play music "audio/Silhouettes.mp3"
     scene bg black_matrix_silhuette with diss
     scene bg black_matrix_silhuette with Pause(3)
     scene bg black_matrix_silhuette_2 with Dissolve(2.0)

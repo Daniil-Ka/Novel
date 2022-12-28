@@ -39,6 +39,10 @@ image matrix_agent:
     
 
 #Определение позиций
+transform x01:
+    yalign 1.0
+    xalign 0.2
+
 transform x02:
     yalign 1.0
     xalign 0.2
@@ -66,6 +70,18 @@ transform x07:
 transform x08:
     yalign 1.0
     xalign 0.8
+
+transform xt1:
+    yalign 1.0
+    xalign 0.05
+
+transform xt2:
+    yalign 1.0
+    xalign 0.4
+
+transform xt3:
+    yalign 1.0
+    xalign 0.95
 
 #Черный фон
 image black = "#000000ff"
