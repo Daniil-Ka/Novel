@@ -18,5 +18,5 @@ label data_science_ending:
     play music "audio/Matrix Credits.mp3"
     #TODO СЛАЙДШОУ КОНЦОВКИ
     scene black with diss
-    call autoskip_text_white("КОНЕЦ")
+    call autoskip_text_white("ТУТ БУДЕТ СЛАЙД-ШОУ СЧАСТЛИВОЙ КОНЦОВКИ")
     return
