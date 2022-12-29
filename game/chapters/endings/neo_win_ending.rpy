@@ -40,7 +40,7 @@ label neo_win_ending:
             call autoskip_text_green("CONFIRMATION OF SHUTDOWN")
             call autoskip_text_green("SHUTDOWN SUCCESSFULLY")
             call autoskip_text_green("EXIT")
-            scene terminal with diss
+            scene bg terminal with diss
             show morpheus with ch_diss
             show matrix_girl at x02 behind morpheus with ch_diss 
             show neo at x08 behind morpheus with ch_diss 

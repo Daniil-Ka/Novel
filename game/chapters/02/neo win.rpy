@@ -2,7 +2,7 @@ label neo_win:
     show math teacher with ch_diss
     math_teacher "Варианты считать от окна! На работу у вас 45 минут!"
     "Староста группы положила мне на стол работу"
-    scene table_with_answers with diss
+    scene bg table_with_answers with diss
     "Что за черт?!"
     "Это и в правду те же задания, что и в моем сне"
     "Или не в моем..."

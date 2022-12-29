@@ -138,6 +138,7 @@ label matrix_win:
     "Два человека пробежали мимо меня и наклонились к незнакомцу"
     noname "Мы еще не закончили!"
     "В этот момент прогремел взрыв"
+    play sound "audio/Boom.mp3"
     scene attach4
     with vpunch
     with hpunch
@@ -151,6 +152,7 @@ label matrix_win:
     morpheus "Так что у тебя нет выбора кроме как пойти с нами и спасти жителей этого мира"
     i "Хорошо, я согласен пойти с вами"
     "Вдруг меня оглушил взрыв"
+    play sound "audio/Boom.mp3"
     scene riot_blow
     with vpunch
     with hpunch
@@ -180,6 +182,7 @@ label matrix_win:
     morpheus "А затем мы приведем наш план в действие и наконец отключим эту нейросеть!"
     scene black with diss
     call autoskip_text_white("СПУСТЯ ДВЕ НЕДЕЛИ")
+    play music "audio/Morpheus.mp3"
     scene bg riot_ship with diss
     show morpheus with ch_diss
     morpheus "Ну что, времени ждать больше нет. Придется действовать теми силами, что имеются в наличии. нейросеть уже начала подозревать о нашем плане"

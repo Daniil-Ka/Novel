@@ -23,6 +23,7 @@ label red_pill:
     "Я сел в кресло и закрыл глаза"
     "Морфеус что-то ввел в терминал и мою голову пронзила острая боль"
     call autoskip_text_green("DATA UNLOCKED")
+    play music "audio/Morpheus.mp3"
     "Я на секунду потерял сознание, а когда очнулся, понял, что знаю все о нейросети"
     scene bg memories with diss
     show morpheus with ch_diss
