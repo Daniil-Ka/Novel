@@ -87,8 +87,20 @@ label matrix_win:
     call autoskip_text_white("Где-то в другом месте...")
     play music "audio/Silhouettes.mp3"
     scene bg black_matrix_silhuette with diss
-    scene bg black_matrix_silhuette with Pause(3)
-    scene bg black_matrix_silhuette_2 with Dissolve(2.0)
+    show silh1:
+        yalign 1.0
+        xalign 0.55
+    show silh2 behind silh1:
+        yalign 1.0
+        xalign 0.45
+    with ch_diss
+    with Pause(1.0)
+    show silh1:
+        yalign 1.0
+        linear 2.0 xalign 0.8
+    show silh2:
+        yalign 1.0
+        linear 2.0 xalign 0.2
     sil1 "Мы наконец-то его обнаружили."
     sil2 "Верно."
     sil1 "Нам стоит его устранить."
@@ -97,21 +109,53 @@ label matrix_win:
     sil2 "Верно"
     sil1 "Тогда снова пора действовать."
     sil2 "Верно"
-
-    #TODO Схватка ИИ и Сопротивления, слайдшоу или что я хз
-    #ГГ общается в сопротивлением
-
+    scene black with diss
+    call autoskip_text_white("НЕСКОЛЬКО ДНЕЙ СПУСТЯ")
+    #TODO НАЛОЖИТЬ МУЗЫКУ
+    scene bg home night with diss
+    show mother with ch_diss
+    m "Сынок, сходи в гараж за картошкой"
+    i "Ну мааам..."
+    m "Ничего, сходишь, развеяшься! А то в последнее время только ешь и спишь"
+    i "Ладно"
+    hide mother with ch_diss
+    "И в правду, что-то я давно никуда не ходил, засиделся дома"
+    "Подышу свежим воздухом"
+    scene garages with diss
+    "Давно я сюда не ходил"
+    "В этот раз картошку выкопали и отвезли без меня"
+    "Решили дать мне отдохнуть после нервов с поступлением перед началом учебы"
+    "В дали появился странный силуэт, который шел в мою сторону..."
+    show silh1 with ch_diss
+    noname "Ну здравствуй, [name]."
+    noname "Настало время разобраться с тобой!"
+    scene attach1 with diss
+    "Он наставил на меня пистолет"
+    "Прогремел выстрел"
+    scene attach2
+    "Но пули не попали в меня, это стрелял кто-то другой!"
+    scene attach3
+    "Два человека пробежали мимо меня и наклонились к незнакомцу"
+    noname "Мы еще не закончили!"
+    "В этот момент прогремел взрыв"
+    scene attach4
+    with vpunch
+    with hpunch
+    "Меня откинуло назад и я потерял сознание..."
+    scene black with diss
+    call autoskip_text_white("НЕСКОЛЬКО ЧАСОВ СПУСТЯ")
     call matrix_story
     morpheus "Верить или не верить, решать тебе. Но если ты останешься в этом мире, то вскоре тебя настигнет нейросеть и все начнется сначала"
     morpheus "По-хорошему я мог бы предложить тебе выбрать синюю или красную таблетку"
     morpheus "Но нам очень нужны твои знания, а если ты останешься здесь, то мы снова тебя потеряем"
     morpheus "Так что у тебя нет выбора кроме как пойти с нами и спасти жителей этого мира"
     i "Хорошо, я согласен пойти с вами"
-    #TODO
-    #Врывается ИИ и убивает половину команды
-    #Слайды
     "Вдруг меня оглушил взрыв"
+    scene riot_blow
+    with vpunch
+    with hpunch
     "В комнате поднялась пыль и ворвались десятки клонов"
+    scene riot_smoke with diss
     "Единственное, что я успел сделать - это схватить красную таблетку и проглотить её"
     scene black with diss
     "Сознание помутнилось и я отключился"

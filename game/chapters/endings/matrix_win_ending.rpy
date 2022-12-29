@@ -2,7 +2,9 @@ label matrix_win_ending:
     scene tv_room with diss
     play music "audio/Matrix Relax.mp3"
     "Я очнулся в каком-то странном месте"
-    #TODO Прописать описание окружения и эмоции
+    "Все вокруг было белым и немного слепило"
+    "Вдруг передо мной из воздуха появился человек"
+    scene white_room_ending with diss
     show matrix_agent with pixellate
     play music "audio/Smith.mp3"
     noname "Ну здравствуй, создатель"

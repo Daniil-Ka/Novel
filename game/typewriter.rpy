@@ -14,6 +14,7 @@ init python:
 
 #ЗАСТАВКИ
 label autoskip_text_colored(text, text_color):
+    stop music
     $ type_sound(text)
     centered "{cps=15}{font=hacked.ttf}{size=100}{color=[text_color]}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
     $ type_sound_stop()
