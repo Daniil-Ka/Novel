@@ -20,7 +20,6 @@ label data_science_ending:
     scene data2 with diss
     "У меня получилось избежать армии благодаря врожденному плоскостопию"
     scene data3 with diss
-    show girlfriend with diss
     "А через несколько лет я поженился на бывшей одногруппнице"
     scene black with diss
     play music "audio/Matrix Credits.mp3"
