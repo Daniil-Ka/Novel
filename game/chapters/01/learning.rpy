@@ -255,7 +255,7 @@ label math_test:
             yalign 1.0
             zoom 0.6  
 
-        math_teacher "Артемова Анастасия - 4"
+        math_teacher "Емельянова Анастасия - 4"
         "Эх, она оказывается еще и умная..."
         hide girlfriend with ch_diss
         math_teacher "*фамилия игрока* - 2, хотя, будь моя воля, я бы поставила кол"

@@ -15,8 +15,14 @@ label data_science_ending:
     "С работой на фрилансе я совсем забыл об учебе."
     "Заказы поступали один за другим, времени на учебу совсем не оставалось."
     "Вскоре институт перестал быть моим приоритетом и я решил отчислиться, о чем тут же сообщил старосте."
-    play music "audio/Matrix Credits.mp3"
-    #TODO СЛАЙДШОУ КОНЦОВКИ
+    scene data1 with diss
+    "Спустя некоторое время я прошел отборв в команду Яндекса и получил высокооплачиваемую должность"
+    scene data2 with diss
+    "У меня получилось избежать армии благодаря врожденному плоскостопию"
+    scene data3 with diss
+    show girlfriend with diss
+    "А через несколько лет я поженился на бывшей одногруппнице"
     scene black with diss
+    play music "audio/Matrix Credits.mp3"
     call autoskip_text_white("КОНЕЦ")
     return
