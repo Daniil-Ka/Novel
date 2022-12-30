@@ -4,6 +4,10 @@ define typewriter = u'typewriter'
 init python:
     renpy.music.register_channel(typewriter, "sfx")
 
+    def change_music(name):
+        name = "audio/" + name + ".mp3"
+        renpy.play(name, channel = "music", fadeout = 1, fadein = 1)
+
     def type_sound(text):
         renpy.sound.play(renpy.random.choice(sounds), channel=typewriter)
         for _ in range(len(text) // 5):
@@ -14,10 +18,15 @@ init python:
 
 #ЗАСТАВКИ
 label autoskip_text_colored(text, text_color):
-    stop music
-    $ type_sound(text)
+    $c = renpy.audio.audio.get_channel("music")
+    $renpy.music.set_volume(0, delay = 0.5, channel = "music")
+    pause 0.5
+    $c.pause()
+    $type_sound(text)
     centered "{cps=15}{font=hacked.ttf}{size=100}{color=[text_color]}[text]{/color}{/size}{/font}{/cps}{w=1.0}{nw}"
-    $ type_sound_stop()
+    $type_sound_stop()
+    $c.unpause()
+    $renpy.music.set_volume(1, delay = 5, channel = "music")
     return
 
 label autoskip_text_green(text):

@@ -12,6 +12,7 @@ label learning_start:
 
 label .choice_subjects:
     show bg home with diss
+    $change_music("Home")
     play sound "audio/Alarm Clock.mp3"
     "Звонок будильника, пора вставать"
     "Сегодня важный день! Вчера наставники рассказали, что сегодня день выбора предметов!"
@@ -21,8 +22,8 @@ label .choice_subjects:
 label .start_of_learning:
     scene black with diss
     call autoskip_text_white("МЕСЯЦ СПУСТЯ")
+    $change_music("Radik")
     scene bg urfu rtf holl with diss
-    play music "audio/URFU RTF.mp3"
     "Дни мелькали один за другим"
     "Я познакомился с преподавателями"
     "Сходил на различные мероприятия"
@@ -35,20 +36,20 @@ label .start_of_learning:
 
 label .math_lesson:
     scene bg math_class with diss
-    play music "audio/Lesson.mp3"
+    $change_music("KR")
     show math teacher
     "В очередной раз придя на пару по математике я услышал страшные для любого ученика слова:"
     math_teacher "На следующей паре у нас будет контрольная работа сразу по нескольким темам!"
     math_teacher "Кто не придет или опоздает, того на пересдачу не пущу!"
     "В этот момент все в моей груди сжалось"
     "Я совершенно не понял последние две темы, а среди моих знакомых нет хороших математиков"
+    $change_music("AfterKR")
     "Придется все учить по видео в интернете, но тогда мне явно не хватит двух дней до следующей пары"
     "Что же делать..."
     "Из раздумий меня вывел вновь прозвучавший голос преподавателя"
     math_teacher "На сегодня все, можете быть свободны"
     "Я вышел из класса и побрел в сторону буфета, намереваясь заглушить свое горе парой бутербродов из тогрового автомата"
     scene bg urfu rtf holl with diss
-    play music "audio/URFU RTF.mp3"
     "Уже на подходе к буфету я вспомнил, что оставил в аудитории свою куртку, и нужно поторопиться, чтобы не искать потом ключи от замка"
     "Я так торопился, что не заметил открывающейся двери и столкнулся головами с выходящим человеком"
     scene bg urfu rtf holl with hpunch
@@ -59,8 +60,8 @@ label .math_lesson:
     return
 
 label .dream:
+    $change_music("Dream")
     scene bg teacher_home with diss
-    play music "audio/Dream.mp3"
     "Странно, раньше я не видел такой аудитории в институте"
     "Все выглядит по-домашнему, тепло и уютно"
     "За столом сидит Светлана Владимировна и что-то пишет на листочках"
@@ -109,6 +110,7 @@ label .interfere_in_conversation:
             math_teacher "Как ты вообще попал в мою квартиру?! Пошел вон отсюда!"
             scene black with diss
             "Я погрузился во мрак и снова потерял сознание"
+            return
 
         "Напомнить о празднике":    
             $condition = True
@@ -124,7 +126,7 @@ label .interfere_in_conversation:
             "Ура, получилось!"
             scene black with diss
             "Я погрузился во мрак и снова потерял сознание"
-    return
+            return
 
 label .not_interfere_in_conversation:
     i "Пожалуй, лучше понаблюдать, пока я не знаю всех деталей"
@@ -157,8 +159,8 @@ label .not_interfere_in_conversation:
 label .after_dream:
     scene black with diss
     call autoskip_text_green("ADMINISTRATOR PERMISSIONS CONFIRMED")
+    $change_music("Radik")
     scene bg urfu rtf holl with diss
-    play music "audio/URFU RTF.mp3"
     "Наконец, я очнулся. Странный был сон, но вроде бы теперь все в порядке"
     "Я посмотрел на учительницу лежащую рядом"
     "Светлана Владимировна тоже приходила в сознание"
@@ -175,8 +177,8 @@ label .after_dream:
     "Осенний воздух приятно обдувал лицо, пока я шел в сторону дома"
     if vmeshalsya:
         "Странный силуэт мелькнул в толпе..."
+    $change_music("Home")
     scene bg home with diss
-    play music "audio/Home.mp3"
     "Я дошел до дома и начал думать, что делать дальше"
     "Можно начать готовиться к контрольной, наверное, это самое полезное, что я сейчас могу сделать"
     "Но голова начала так сильно болеть и я решил лечь спать"
@@ -191,8 +193,8 @@ label .after_dream:
     return
 
 label object_transfer_in_dream:
+    $change_music("HeroDream")
     scene bg white_room_dream with diss
-    play music "audio/Dream.mp3"
     "Странное место"
     "Это осознанное сноведение?"
     "Хотя, после сегодняшних событий я уже ни чему не удивляюсь"
@@ -211,8 +213,8 @@ label object_transfer_in_dream:
     "Но какой студент упустит возможность списать?"
     scene black with diss
     call autoskip_text_green("DOWNLOAD COMLETE")
+    $change_music("Radik")
     scene bg home with diss
-    play music "audio/Home.mp3"
     "Я проснулся за 5 минут до будильника и отключил его"
     "Такое ощущение, будто бы не спал"
     "Хотя я полностью отдохнул"
@@ -223,7 +225,7 @@ label object_transfer_in_dream:
 
 label math_test:
     scene bg math_class with diss
-    play music "audio/Lesson.mp3"
+    $change_music("MathDataScience")
     "\"Долгожданный\" день настал. Сегодня придется писать контрольную, а я так и не смог к ней подготовиться"
     #Вмешался, кр перенесли
     if vmeshalsya and condition: 

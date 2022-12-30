@@ -1,6 +1,6 @@
 label red_pill:
     scene bg riot_ship with diss
-    play music "audio/Morpheus.mp3"
+    $change_music("Morpheus")
     show morpheus with ch_diss
     morpheus "О, уже пришел в себя?"
     morpheus "Обычно проходит несколько суток, прежде чем люди приходят в сознание после отключения от систем жизнеобеспечения"
@@ -23,7 +23,6 @@ label red_pill:
     "Я сел в кресло и закрыл глаза"
     "Морфеус что-то ввел в терминал и мою голову пронзила острая боль"
     call autoskip_text_green("DATA UNLOCKED")
-    play music "audio/Morpheus.mp3"
     "Я на секунду потерял сознание, а когда очнулся, понял, что знаю все о нейросети"
     scene bg memories with diss
     show morpheus with ch_diss
@@ -35,6 +34,7 @@ label red_pill:
     "Я чувствовал себя будто бы пробудившимся ото сна"
     "Вечного сна..."
     morpheus "Пошли со мной, я покажу тебе, что стало с этим миром, пока тебя не было..."
+    $change_music("Matrix slides")
     scene matrix_slide_1 with diss
     morpheus "Машины поработили человечество..."
     scene matrix_slide_2 with diss
@@ -49,6 +49,7 @@ label red_pill:
     scene matrix_slide_6 with diss
     morpheus "Почти по всем параметрам мы отброшены в каменный век"
     morpheus "У нас остались только некоторые корабли для передвижения по планете и ремонтные станции для них"
+    $change_music("Morpheus")
     scene bg riot_ship with diss
     show morpheus with ch_diss
     morpheus "Ужасно, не правда ли?"

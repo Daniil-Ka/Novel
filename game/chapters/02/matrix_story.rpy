@@ -1,5 +1,5 @@
 label matrix_story:
-    play music "audio/Matrix Main Theme.mp3"
+    $change_music("Matrix Main Theme")
     scene riot_on_flat with diss
     noname "Приветствую тебя."
     noname "Ты, наверное, напуган и не понимаешь что происходит."

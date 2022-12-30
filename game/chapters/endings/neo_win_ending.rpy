@@ -1,7 +1,7 @@
 label neo_win_ending:
     scene white_room_ending with diss
     show matrix_agent with pixellate
-    play music "audio/Smith.mp3"
+    $change_music("Matrix win")
     agent "Ну здравствуй, Создатель!"
     agent "Пришел, чтобы отключить меня?"
     agent "А ведь когда-то мы вместе часами болтали в этом месте..."
@@ -44,7 +44,7 @@ label neo_win_ending:
             show morpheus with ch_diss
             show matrix_girl at x02 behind morpheus with ch_diss 
             show neo at x08 behind morpheus with ch_diss 
-            play music "audio/Matrix Main Theme.mp3"
+            $change_music("Matrix Main Theme")
             morpheus "Ты справился, сынок!"
             morpheus "Нейросеть отключена"
             morpheus "Машины повержены"
@@ -52,7 +52,7 @@ label neo_win_ending:
             i "Да..."
             i "Светлое..."
             scene black with diss
-
+            stop music
             $ type_sound("TO BE CONTINUED")
             centered "{cps=5}{font=hacked.ttf}{size=100}TO BE CONTINUED{/size}{/font}{/cps}{w=100}{nw}"
             $ type_sound_stop()
@@ -75,7 +75,7 @@ label neo_win_ending:
             "А может..."
             "Нужно будет проверить наличие прав администратора..."
             scene black with diss
-
+            stop music
             $ type_sound("TO BE CONTINUED")
             centered "{cps=5}{font=hacked.ttf}{size=100}TO BE CONTINUED{/size}{/font}{/cps}{w=100}{nw}"
             $ type_sound_stop()

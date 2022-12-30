@@ -1,6 +1,6 @@
 label introdaction:
     scene bg ege with diss
-    play music "audio/Lesson.mp3"
+    $change_music("Ege")
     "Блин, что произошло! Я что, уснул на экзамене?!"
     show ege teacher with ch_diss
     "Учитель" "Внимание! До конца экзамена осталось 5 минут!"
@@ -14,7 +14,7 @@ label introdaction:
             "Успел!"
             "Остается только надеяться, что ответ получился правильный."
             scene bg home night with diss
-            play music "audio/Home.mp3"
+            $change_music("Home")
             "Несколько бессонных ночей спустя..."
             i "Ура!!! 98 баллов по математике! Надо рассказать маме!"
             scene bg home with diss
@@ -30,14 +30,14 @@ label introdaction:
             "Это действительно сложный параметр для меня."
             "Придется сдавать работу без этой задачи"
             scene bg home night with diss
-            play music "audio/Home.mp3"
+            $change_music("Home")
             "После нескольких бесонных ночей в ожидании результатов..."
             call mobilization_ending
     return
 
 label .admission_to_URFU:
     scene bg urfu main with diss
-    play music "audio/URFU.mp3"
+    $change_music("Urfu main")
     "И вот настал день подачи документов"
     "Баллы у меня достаточно высокие, поэтому и выбор неплохой"
     "Но, как известно, чем больше вариантов - тем сложнее выбрать один из них"
@@ -53,15 +53,13 @@ label .admission_to_URFU:
             scene black with diss
             call autoskip_text_white("Некоторое время спустя...")
             scene bg 1st_september with diss
-            play music "audio/URFU RTF.mp3"
+            $change_music("Radik")
             "Наступает 1 сентября."
             "Наконец-то пришло время! Увижу своих одногруппников, возможно даже подружусь с кем-то"
             "В потоке мероприятий день незаметно перешел в вечер"
             scene bg 1st_september evening with diss
             "Всех первокурсников распустили по домам готовиться к предстоящей учебе"
             scene bg home night with diss
-            play music "audio/Home.mp3"
-
             "Да-а-а, насыщенный был денёк. Столько событий, и все в один день!"
             "Наставники говорят, в будущем мероприятий будет становиться только больше"
             "А некоторые даже самим придется организовывать"
@@ -69,7 +67,7 @@ label .admission_to_URFU:
             "Ну, деваться уже некуда, придется как-то выкраивать среди всего этого время и на учебу, чтобы не отчислили на первой же сессии"
             scene black with diss
             "Я лег на кровать и моментально оказался в царстве Морфея, видимо, сказывается накопленная за день усталость"
-            call autoskip_text_white("НЕДЕЛЯ СПУСТЯ")
+            call autoskip_text_white("НЕДЕЛЮ СПУСТЯ...")
             call learning_start
         "МатМех":
             "Совсем не знаю что выбрать..."
@@ -80,8 +78,8 @@ label .admission_to_URFU:
     return
 
 label .summer_slideshow:
+    $change_music("Summer")
     scene bg summer 1 with diss
-    play music "audio/Beach.mp3"
     "Как же классно я веселился с друзьями! Я так рад, что обрел новые знакомства!"
     scene bg summer 2 with diss
     "Я был с родителями на море! Так весело было на пляже!"
