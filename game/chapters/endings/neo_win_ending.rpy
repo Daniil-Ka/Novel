@@ -59,6 +59,7 @@ label neo_win_ending:
             $change_music("Matrix Credits")
             scene black with diss
             call show_credits
+            return
 
         "Оставить нейросеть":
             i "Ты прав, человечество действительно не сможет перенести выход из нейросети в такую реальность..."
@@ -88,6 +89,7 @@ label neo_win_ending:
             $ type_sound("ACCESS IS ALLOWED")
             centered "{cps=40}{font=hacked.ttf}{size=100}{color=#80ff00}ACCESS IS ALLOWED{/color}{/size}{/font}{/cps}{w=0.1}{nw}"
             $ type_sound_stop()
+            return
     return
 
         
