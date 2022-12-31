@@ -74,4 +74,7 @@ label matrix_win_ending:
     hide ege teacher with ch_diss
     scene black with diss
     call autoskip_text_white("TO BE CONTINUED")
+    $change_music("Matrix Credits")
+    scene black with diss
+    call show_credits
     return

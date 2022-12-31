@@ -56,6 +56,9 @@ label neo_win_ending:
             $ type_sound("TO BE CONTINUED")
             centered "{cps=5}{font=hacked.ttf}{size=100}TO BE CONTINUED{/size}{/font}{/cps}{w=100}{nw}"
             $ type_sound_stop()
+            $change_music("Matrix Credits")
+            scene black with diss
+            call show_credits
 
         "Оставить нейросеть":
             i "Ты прав, человечество действительно не сможет перенести выход из нейросети в такую реальность..."
@@ -79,6 +82,8 @@ label neo_win_ending:
             $ type_sound("TO BE CONTINUED")
             centered "{cps=5}{font=hacked.ttf}{size=100}TO BE CONTINUED{/size}{/font}{/cps}{w=100}{nw}"
             $ type_sound_stop()
+            $change_music("Matrix Credits")
+            scene black with diss
             call show_credits
             $ type_sound("ACCESS IS ALLOWED")
             centered "{cps=40}{font=hacked.ttf}{size=100}{color=#80ff00}ACCESS IS ALLOWED{/color}{/size}{/font}{/cps}{w=0.1}{nw}"
