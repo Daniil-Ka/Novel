@@ -21,7 +21,7 @@ label data_science_ending:
     "У меня получилось избежать армии благодаря врожденному плоскостопию"
     scene data3 with diss
     "А через несколько лет я поженился на бывшей одногруппнице"
-    scene black with diss
     $change_music("Matrix Credits")
-    call autoskip_text_white("КОНЕЦ")
+    scene black with diss
+    call show_credits
     return
