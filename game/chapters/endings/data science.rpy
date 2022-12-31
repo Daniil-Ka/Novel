@@ -2,7 +2,7 @@ label data_science_ending:
     scene black with diss
     call autoskip_text_white("Три недели спустя.")
     scene bg urfu rtf holl with diss
-    play music "audio/URFU RTF.mp3"
+    $change_music("Radik")
     "Вот чёрт! Уже третья отработка и все впустую. Математика это явно не мое, еще и без стипендии остался."
     "Нужно теперь думать, на что я буду жить."
     "Вроде кто-то говорил про фриланс и что там можно неплохо заработать."
@@ -10,7 +10,7 @@ label data_science_ending:
     scene black with diss
     call autoskip_text_white("Полгода спустя.")
     scene bg home with diss
-    play music "audio/Home.mp3"
+    $change_music("Home")
     "Очередное сообщение от старосты, что мне нужно скорее закрыть долги."
     "С работой на фрилансе я совсем забыл об учебе."
     "Заказы поступали один за другим, времени на учебу совсем не оставалось."
@@ -21,7 +21,7 @@ label data_science_ending:
     "У меня получилось избежать армии благодаря врожденному плоскостопию"
     scene data3 with diss
     "А через несколько лет я поженился на бывшей одногруппнице"
+    $change_music("Matrix Credits")
     scene black with diss
-    play music "audio/Matrix Credits.mp3"
-    call autoskip_text_white("КОНЕЦ")
+    call show_credits
     return

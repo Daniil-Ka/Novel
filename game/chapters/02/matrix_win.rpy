@@ -16,6 +16,7 @@ label matrix_win:
     "После пары я отправился домой, чтобы вечером проверить одну теорию..."
     scene black with diss
     call autoskip_text_white("Несколько часов спустя...")
+    $change_music("Home")
     scene bg home night with diss
     "Я весь день думал над произошедшим"
     "Правда ли я могу попадать в чужие сны? Если это так, то что мне нужно для это сделать?"
@@ -25,7 +26,7 @@ label matrix_win:
     scene black with diss
     call autoskip_text_green("CONNECTING TO HOST")
     scene bg summer 2 with diss
-    play music "audio/Beach.mp3"
+    $change_music("Summer")
     "Проснулся я уже стоя на волейбольной площадке рядом с другом"
     "Мы играли в пляжный волейбол два на два"
     show friend_anton beach with ch_diss
@@ -34,14 +35,15 @@ label matrix_win:
     "Я подкинул мяч и ударил со всей силы"
     "Мяч отскочил от руки и полетел прямиком Антону в лицо"
     "Антон упал от полученного удара"
+    stop music fadeout 1.0
     scene black with diss
     "После этого что-то невидимое вытащило меня из сна"
     play sound "audio/Alarm Clock.mp3"
     "Это был будильник"
+    $change_music("Home")
     scene bg home with diss
     "Пора идти на пары, там нужно будет постараться узнать от Антона о его сне"
     scene bg urfu rtf holl with diss
-    play music "audio/URFU RTF.mp3"
     show friend_anton with ch_diss
     anton "Привет, давно не виделись!"
     i "Привет, и в правду давно"
@@ -63,7 +65,6 @@ label matrix_win:
     scene black with diss
     call autoskip_text_white("ВЕЧЕР ТОГО ЖЕ ДНЯ")
     scene bg home night with diss
-    play music "audio/Home.mp3"
     "Итак, выбираем кандидата."
     "К кому бы попробовать проникнуть?"
     "Точно! У меня же завтра контрольная по английскому."
@@ -71,7 +72,7 @@ label matrix_win:
     scene black with diss 
     call autoskip_text_white("Месяц спустя. Преподавательская.")
     scene bg teachers_room with diss
-    play music "audio/Teaching Room.mp3"
+    $change_music("Teaching Room")
     show teacher1 at xt1 with ch_diss
     show teacher2 at xt2 with ch_diss
     show teacher3 at xt3 with ch_diss
@@ -85,7 +86,7 @@ label matrix_win:
     teacher1 "И в правду..."
     scene black with diss
     call autoskip_text_white("Где-то в другом месте...")
-    play music "audio/Silhouettes.mp3"
+    $change_music("Silhouettes")
     scene bg black_matrix_silhuette with diss
     show silh1:
         yalign 1.0
@@ -111,7 +112,7 @@ label matrix_win:
     sil2 "Верно"
     scene black with diss
     call autoskip_text_white("НЕСКОЛЬКО ДНЕЙ СПУСТЯ")
-    #TODO НАЛОЖИТЬ МУЗЫКУ
+    $change_music("Home")
     scene bg home night with diss
     show mother with ch_diss
     m "Сынок, сходи в гараж за картошкой"
@@ -126,6 +127,7 @@ label matrix_win:
     "В этот раз картошку выкопали и отвезли без меня"
     "Решили дать мне отдохнуть после нервов с поступлением перед началом учебы"
     "В дали появился странный силуэт, который шел в мою сторону..."
+    $change_music("Fight in garages")
     show silh1 with ch_diss
     noname "Ну здравствуй, [name]."
     noname "Настало время разобраться с тобой!"
@@ -182,20 +184,18 @@ label matrix_win:
     morpheus "А затем мы приведем наш план в действие и наконец отключим эту нейросеть!"
     scene black with diss
     call autoskip_text_white("СПУСТЯ ДВЕ НЕДЕЛИ")
-    play music "audio/Morpheus.mp3"
     scene bg riot_ship with diss
     show morpheus with ch_diss
     morpheus "Ну что, времени ждать больше нет. Придется действовать теми силами, что имеются в наличии. нейросеть уже начала подозревать о нашем плане"
     hide morpheus with ch_diss
     "Я пошел и сел в кресло для входа в матрицу..."
     scene black with diss
-
+    stop music
     call autoskip_text_green("ПРОЦЕСС ЗАПУЩЕН")
     call autoskip_text_green("ПОДКЛЮЧЕНИЕ К СЕРВЕРУ")
     call autoskip_text_green("ПОИСК УЯЗВИМОСТИ")
     call autoskip_text_green("УЯЗВИМОСТЬ НАЙДЕНА")
     call autoskip_text_green("НАЧАЛО ЗАГРУЗКИ ДАННЫХ")
-  
     $progress = 0
     while progress < 101:
             show screen center_text(str(progress) + "%")

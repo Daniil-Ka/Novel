@@ -12,6 +12,7 @@ label neo_win:
     "Ладно, мысли нужно оставить на потом, а сейчас перенести ответы и попытаться что-то решить, чтобы удостовериться в правильности"
     scene black with diss
     call autoskip_text_white("ВЕЧЕР ТОГО ЖЕ ДНЯ")
+    $change_music("Urfu main")
     scene bg home night with diss
     "До самого вечера мысли о посещении чужих снов не давали мне покоя"
     "Что если я могу проникнуть в сон любого человека и узнать у него что захочу?"
@@ -45,7 +46,7 @@ label neo_win:
     "Может попробовать попасть в его сон и узнать о нем побольше?"
     "Ладно, теперь нужно сосредоточиться на мыслях об отце, хоть я и не особо много знаю..."
     scene black with diss
-
+    stop music
     $ type_sound("ACCESS DENIED")
     centered "{cps=25}{font=hacked.ttf}{size=100}{color=#ff0000ff}ACCESS DENIED{/color}{/size}{/font}{/cps}{w=0.5}{nw}"
     play sound "audio/Access Denied.mp3"
@@ -63,14 +64,14 @@ label neo_win:
     "Ладно, лучше будет разобраться с этим завтра..."
     call autoskip_text_white("Где-то в другом месте...")
     scene riot_happy with diss
-    play music "audio/Silhouettes.mp3"
+    $change_music("Silhouettes")
     noname "Мы обнаружили его!"
     noname "Наконец!"
     noname "Спустя столько лет..."
     scene black with diss
     call autoskip_text_white("НЕДЕЛЯ СПУСТЯ")
     scene bg home with diss
-    play music "audio/Home.mp3"
+    $change_music("Home")
     "Важный день"
     "Я решил наконец попробовать свои силы по-серьезному и поучаствовать в хакатоне на тему ИИ"
     'Нашей команде "Продам муравъеда" нужно будет написать одну нейросеть...'
@@ -80,6 +81,7 @@ label neo_win:
     "Пора отправляться на место проведения"
     scene black with diss
     call autoskip_text_white("НЕСКОЛЬКО ЧАСОВ СПУСТЯ")
+    $change_music("Hackaton")
     scene hackaton with diss
     show organizer with ch_diss
     o "Приветствую всех участников на нашем хакатоне посвященном тематике искусственного интеллекта!"
@@ -101,7 +103,6 @@ label neo_win:
     call autoskip_text_white("КОНЕЦ ХАКАТОНА")
     scene hackaton with diss
     show organizer with ch_diss
-    play music "audio/URFU.mp3"
     o 'Итак, третье место занимает команда "TheDisgustingSix"! Поздравим их!'
     "Из зала послышалось несколько хлопков, что неудивительно, при таком маленьком количестве людей"
     o 'Идем дальше! Второе место занимает команда "NPCs"! У вас получилась отличная нейросеть!'
@@ -112,12 +113,13 @@ label neo_win:
     "Способность попадать в чужие сны действительно способна творить чудеса!"
     "Ну, призовые заработал, теперь можно и домой пойти"
     scene bg 1st_september with diss
-    "Как свежо она улице"
+    "Как свежо на улице"
     "24 часа в коворкинге с большим количеством людей дают о себе знать"
     "Украсть идеи получилось всего за пару часов, так что организм не выспался"
     "Через 15 минут дойду до дома, а через 30 минут уже буду спать..."
     scene bg 1st_september with vpunch
     scene black with diss
+    stop music
     "Что-то ударило меня по голове и я отключился..."
     call autoskip_text_white("НЕСКОЛЬКО ЧАСОВ СПУСТЯ")
     call matrix_story
@@ -166,12 +168,12 @@ label neo_win:
     i "Хорошо, тогда я постараюсь как можно быстрее придти в себя"
     scene black with diss
     call autoskip_text_white("МЕСЯЦ СПУСТЯ")
-    scene bg memories with diss
-    show morpheus with ch_diss
+    scene bg memories
+    show morpheus
+    with ch_diss
     morpheus "Настал момент, пора выдвигаться..."
     i "Победа близка..."
-    scene black with diss
-    call autoskip_text_white("НЕСКОЛЬКО ЧАСОВ СПУТСЯ")
+    $change_music("Epic")
     scene bg tunnel with diss
     show morpheus black with ch_diss
     morpheus "Итак, план!"
